@@ -1,0 +1,125 @@
+/* Colors: #2A2E45, #6D8EA0, #F2CD5D*/
+
+/*Menu*/
+.bg-dark {
+    background-color: #2A2E45 !important;
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: #F2CD5D !important;
+}
+.navbar-brand {
+    color: #F2CD5D !important;
+}
+
+/*Body*/
+body {
+    color: #f2f4f3;
+    background-color: #2A2E45;
+}
+th, td{
+    padding: 10px 20px;
+    border: 1px solid #f2f4f3;
+}
+h2{
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+h4{
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+table{
+    border-color: #f2f4f3;
+    border-style: double;
+    border-radius: 10px;
+    width: 100%;
+    table-layout: auto;
+}
+img {
+    width: 100%;
+}
+#inputBoxes {
+    align-content: center;
+    margin: auto;
+}
+.input{
+    border-radius: 25px;
+    background: #6D8EA0;
+    width: auto;
+    max-width: 600px;
+    min-width: 300px;
+    height: 100px;
+    border: 5px solid #3B6475;
+    display: flex;
+    align-items: center;
+    margin: auto;
+}
+#dateBox{
+    margin-left: 5%;
+    margin-right: 5%;
+    border-radius: 25px;
+    background: #6D8EA0;
+    width: auto;
+    height: auto;
+    border: 5px solid #3B6475;
+    display: flex;
+}
+.dataBox{
+    margin-left: 5%;
+    margin-right: 5%;
+    border-radius: 25px;
+    background: #175975;
+    min-width: 450px;
+    width:auto;
+    height: auto;
+    display: flex;
+    transition: transform .2s;
+}
+.dataBox:hover {
+    border: 5px solid #3B6475;
+    transform: scale(1.2);
+}
+.dataForecastBox{
+    margin-left: 5%;
+    margin-right: 5%;
+    border-radius: 25px;
+    background: #175975;
+    display: flex;
+    transition: transform .2s;
+}
+.dataForecastBox:hover {
+    border: 5px solid #3B6475;
+    transform: scale(1.2);
+}
+
+/*Responsive*/
+@media only screen and (min-width: 768px) {
+    #dateResults{
+        margin-right:auto;
+        margin-left: auto;
+    }
+} 
+  
+@media only screen and (max-width: 767px) {
+    #dateResults{
+        margin-right:auto;
+        margin-left: auto;
+    }
+}
+
+/*Footer*/
+a {
+    color: white;
+}
+.footer {
+    background-color: #6D8EA0;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 40px;
+}
+
