@@ -12,7 +12,9 @@ document.getElementById("dateSubmit").addEventListener("click", function(event) 
       }).then(function(json) {
         let returnedStarInfo = "";
         if(json.code === 400) {
-          returnedStarInfo += `<h2>${value} is an invalid input.</h2><br><h2> Please verify the input is YYYY-MM-DD</h2><br><h2>Make sure the date is after 1995-06-16</h2>`;
+          returnedStarInfo += `<h2>${value} is an invalid input.</h2><br>
+          <h2> Please verify the input is YYYY-MM-DD</h2><br>
+          <h2>Make sure the date is after 1995-06-16</h2>`;
         }
         else if(json.media_type === "video") {
           returnedStarInfo += `<h2>${value}</h2>`;

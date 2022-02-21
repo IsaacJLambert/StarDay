@@ -76,22 +76,9 @@ iframe{
     height: auto;
     border: 5px solid #3B6475;
     display: flex;
+    padding: 10px 15px;
 }
-.dataBox{
-    margin-left: 5%;
-    margin-right: 5%;
-    border-radius: 25px;
-    background: #175975;
-    min-width: 450px;
-    width:auto;
-    height: auto;
-    display: flex;
-    transition: transform .2s;
-}
-.dataBox:hover {
-    border: 5px solid #3B6475;
-    transform: scale(1.2);
-}
+
 
 /*Responsive*/
 @media only screen and (min-width: 768px) {
@@ -113,6 +100,7 @@ a {
     color: #F2CD5D !important;
 }
 .footer {
+    border-top: 5px solid #3B6475;
     background-color: #6D8EA0;
     text-align: center;
     position: fixed;
