@@ -3,8 +3,13 @@
 document.getElementById("dateSubmit").addEventListener("click", function(event) {
     event.preventDefault();
     const value = document.getElementById("dateInput").value;
-    if (value === "")
+    if (value === "") {
       return;
+    }
+    callAPI(value);
+  });
+
+  function callAPI(value){
     const url = `https://api.nasa.gov/planetary/apod?api_key=kUZxRExxvi15Q8T3ydciSOTQNu6ZOKg8Pzbbyx2z&date=${value}`;
     fetch(url)
       .then(function(response) {
@@ -37,4 +42,4 @@ document.getElementById("dateSubmit").addEventListener("click", function(event) 
         }
         document.getElementById("dateResults").innerHTML = returnedStarInfo;
       });
-  });
+  }
